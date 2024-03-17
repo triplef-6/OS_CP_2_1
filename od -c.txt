@@ -1,0 +1,28 @@
+triplef@fedora:~/CLionProjects/OS_CP_2.1/cmake-build-debug$ od -c file.hole
+0000000   a   b   c   d   e   f   g   h   i   j  \0  \0  \0  \0  \0  \0
+0000020  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0
+*
+0040000   A   B   C   D   E   F   G   H   I   J
+0040012
+
+triplef@fedora:~/CLionProjects/OS_CP_2.1/cmake-build-debug$ od -a file.hole
+0000000   a   b   c   d   e   f   g   h   i   j nul nul nul nul nul nul
+0000020 nul nul nul nul nul nul nul nul nul nul nul nul nul nul nul nul
+*
+0040000   A   B   C   D   E   F   G   H   I   J
+0040012
+
+triplef@fedora:~/CLionProjects/OS_CP_2.1/cmake-build-debug$ od -b file.hole
+0000000 141 142 143 144 145 146 147 150 151 152 000 000 000 000 000 000
+0000020 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+*
+0040000 101 102 103 104 105 106 107 110 111 112
+0040012
+
+triplef@fedora:~/CLionProjects/OS_CP_2.1/cmake-build-debug$ od -d file.hole
+0000000 25185 25699 26213 26727 27241     0     0     0
+0000020     0     0     0     0     0     0     0     0
+*
+0040000 16961 17475 17989 18503 19017
+0040012
+
